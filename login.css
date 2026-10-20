@@ -182,3 +182,29 @@ input:focus {
     opacity: 1;
     text-shadow: 0 0 5px rgba(0, 212, 255, 0.4);
 }
+
+.back-link {
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    display: inline-block;
+    color: #00bfff;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+.back-link::before {
+  content: "← "; 
+  margin-right: 6px; 
+  display: inline-block;
+  transition: transform 0.2s ease; 
+}
+
+
+.back-link:hover::before {
+  transform: translateX(-4px); 
+}
